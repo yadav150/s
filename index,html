@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yadav Subba · Web Developer</title>
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome 6 (free) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ============================================================
+    SCROLL PROGRESS BAR
+    ============================================================ -->
+    <div id="progress-bar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+    <!-- ============================================================
+    NAVIGATION
+    ============================================================ -->
+    <header class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#hero">Y.S.</a>
+            </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <ul class="nav-menu" id="nav-menu" role="menubar">
+                <li role="none"><a href="#hero" role="menuitem" class="nav-link active">Home</a></li>
+                <li role="none"><a href="#about" role="menuitem" class="nav-link">About</a></li>
+                <li role="none"><a href="#skills" role="menuitem" class="nav-link">Skills</a></li>
+                <li role="none"><a href="#projects" role="menuitem" class="nav-link">Projects</a></li>
+                <li role="none"><a href="#stats" role="menuitem" class="nav-link">Stats</a></li>
+                <li role="none"><a href="#contact" role="menuitem" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ============================================================
+    HERO SECTION
+    ============================================================ -->
+    <section id="hero" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Yadav Subba</h1>
+                <div class="hero-typing-wrapper">
+                    <span class="hero-title-prefix">I'm a </span>
+                    <span class="hero-title" id="typed-title"></span>
+                    <span class="hero-cursor" id="cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    Passionate about crafting clean, responsive web experiences.
+                    I build modern interfaces with HTML, CSS, and JavaScript.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-code"></i> View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Contact Me
+                    </a>
+                </div>
+            </div>
+
+            <!-- Animated profile placeholder (glassmorphism avatar) -->
+            <div class="hero-profile">
+                <div class="profile-ring">
+                    <div class="profile-avatar">
+                        <span>YS</span>
+                    </div>
+                </div>
+                <div class="floating-badge badge-1">
+                    <i class="fas fa-code"></i> Web Dev
+                </div>
+                <div class="floating-badge badge-2">
+                    <i class="fas fa-mobile-alt"></i> Responsive
+                </div>
+                <div class="floating-badge badge-3">
+                    <i class="fas fa-rocket"></i> Creative
+                </div>
+            </div>
+        </div>
+        <div class="hero-shape-divider">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0 C300,100 700,0 1200,60 L1200,120 L0,120 Z" fill="#ffffff" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    ABOUT SECTION
+    ============================================================ -->
+    <section id="about" class="about-section section-padding">
+        <div class="container">
+            <div class="section-header fade-element" data-fade="up">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Know Me Better</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-image fade-element" data-fade="left">
+                    <div class="about-img-placeholder">
+                        <span>Y.S.</span>
+                    </div>
+                </div>
+                <div class="about-text fade-element" data-fade="right">
+                    <h3>Building the Web, One Line at a Time</h3>
+                    <p>
+                        I'm a passionate web developer who loves turning ideas into interactive,
+                        user-friendly websites. My journey began with a curiosity for how things
+                        work online — and now I craft digital experiences that are both beautiful
+                        and functional.
+                    </p>
+                    <p>
+                        I'm constantly learning and expanding my skills, with a special focus on
+                        <strong>JavaScript</strong> and modern frontend practices. I believe in
+                        clean code, responsive design, and creating value through technology.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-heart" style="color: #e74c3c;"></i>
+                            <span>Passion for Web Dev</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-js" style="color: #f7df1e;"></i>
+                            <span>Learning JavaScript</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fab fa-github" style="color: #333;"></i>
+                            <span>GitHub Projects</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-laptop-code" style="color: #3498db;"></i>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    SKILLS SECTION
+    ============================================================ -->
+    <section id="skills" class="skills-section section-padding">
+        <div class="container">
+            <div class="section-header fade-element" data-fade="up">
+                <span class="section-tag">My Skills</span>
+                <h2 class="section-title">What I Bring to the Table</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card fade-element" data-fade="up" data-delay="0">
+                    <div class="skill-icon"><i class="fab fa-html5" style="color: #e34f26;"></i></div>
+                    <h4>HTML5</h4>
+                    <p>Semantic markup, accessibility, and SEO-friendly structure.</p>
+                </div>
+                <div class="skill-card fade-element" data-fade="up" data-delay="100">
+                    <div class="skill-icon"><i class="fab fa-css3-alt" style="color: #1572b6;"></i></div>
+                    <h4>CSS3</h4>
+                    <p>Flexbox, Grid, animations, and responsive layouts.</p>
+                </div>
+                <div class="skill-card fade-element" data-fade="up" data-delay="200">
+                    <div class="skill-icon"><i class="fab fa-js" style="color: #f7df1e;"></i></div>
+                    <h4>JavaScript</h4>
+                    <p>ES6+, DOM manipulation, APIs, and interactive UIs.</p>
+                </div>
+                <div class="skill-card fade-element" data-fade="up" data-delay="300">
+                    <div class="skill-icon"><i class="fab fa-git-alt" style="color: #f05032;"></i></div>
+                    <h4>Git</h4>
+                    <p>Version control, branching, and collaborative workflows.</p>
+                </div>
+                <div class="skill-card fade-element" data-fade="up" data-delay="400">
+                    <div class="skill-icon"><i class="fab fa-github" style="color: #181717;"></i></div>
+                    <h4>GitHub</h4>
+                    <p>Repo management, Pages hosting, and open-source contributions.</p>
+                </div>
+                <div class="skill-card fade-element" data-fade="up" data-delay="500">
+                    <div class="skill-icon"><i class="fas fa-mobile-alt" style="color: #3498db;"></i></div>
+                    <h4>Responsive Design</h4>
+                    <p>Mobile-first approach, fluid grids, and cross-device compatibility.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    PROJECTS SECTION
+    ============================================================ -->
+    <section id="projects" class="projects-section section-padding">
+        <div class="container">
+            <div class="section-header fade-element" data-fade="up">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Projects I've Built</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Card 1 -->
+                <div class="project-card fade-element" data-fade="up" data-delay="0">
+                    <div class="project-image" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="project-body">
+                        <h4>Portfolio Website</h4>
+                        <p>My personal portfolio built with HTML, CSS, and vanilla JavaScript — fully responsive and animated.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="#" class="btn btn-sm btn-secondary"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="project-card fade-element" data-fade="up" data-delay="100">
+                    <div class="project-image" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="project-body">
+                        <h4>Assam Sakori Job Portal</h4>
+                        <p>A job portal platform for Assam with listings, search, and application management features.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="#" class="btn btn-sm btn-secondary"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="project-card fade-element" data-fade="up" data-delay="200">
+                    <div class="project-image" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <div class="project-body">
+                        <h4>Expense Tracker</h4>
+                        <p>Track your daily expenses with a clean UI, local storage persistence, and category filtering.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="#" class="btn btn-sm btn-secondary"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="project-card fade-element" data-fade="up" data-delay="300">
+                    <div class="project-image" style="background: linear-gradient(135deg, #43e97b, #38f9d7);">
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <div class="project-body">
+                        <h4>Weather App</h4>
+                        <p>Real-time weather data with a beautiful interface, search by city, and dynamic icons.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="#" class="btn btn-sm btn-secondary"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="project-card fade-element" data-fade="up" data-delay="400">
+                    <div class="project-image" style="background: linear-gradient(135deg, #fa709a, #fee140);">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <div class="project-body">
+                        <h4>Quiz App</h4>
+                        <p>An interactive quiz app with multiple-choice questions, scoring, and a progress tracker.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="#" class="btn btn-sm btn-secondary"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    STATISTICS SECTION
+    ============================================================ -->
+    <section id="stats" class="stats-section section-padding">
+        <div class="container">
+            <div class="section-header fade-element" data-fade="up">
+                <span class="section-tag" style="color: #fff;">Achievements</span>
+                <h2 class="section-title" style="color: #fff;">By the Numbers</h2>
+                <div class="section-divider" style="background: rgba(255,255,255,0.4);"></div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-item fade-element" data-fade="up" data-delay="0">
+                    <div class="stat-number" data-target="12">0</div>
+                    <p class="stat-label">Projects Completed</p>
+                </div>
+                <div class="stat-item fade-element" data-fade="up" data-delay="150">
+                    <div class="stat-number" data-target="8">0</div>
+                    <p class="stat-label">Technologies</p>
+                </div>
+                <div class="stat-item fade-element" data-fade="up" data-delay="300">
+                    <div class="stat-number" data-target="24">0</div>
+                    <p class="stat-label">GitHub Repositories</p>
+                </div>
+                <div class="stat-item fade-element" data-fade="up" data-delay="450">
+                    <div class="stat-number" data-target="5">0</div>
+                    <p class="stat-label">Happy Clients</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CONTACT SECTION
+    ============================================================ -->
+    <section id="contact" class="contact-section section-padding">
+        <div class="container">
+            <div class="section-header fade-element" data-fade="up">
+                <span class="section-tag">Get in Touch</span>
+                <h2 class="section-title">Let's Connect</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info fade-element" data-fade="left">
+                    <h3>Have a question or want to collaborate?</h3>
+                    <p>
+                        I'm always open to discussing new projects, creative ideas,
+                        or opportunities to be part of your vision.
+                    </p>
+                    <div class="contact-detail">
+                        <i class="fas fa-envelope"></i>
+                        <span>yadav.subba@example.com</span>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Assam, India</span>
+                    </div>
+                    <div class="contact-social">
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper fade-element" data-fade="right">
+                    <form id="contact-form" class="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="form-name">Your Name</label>
+                            <input type="text" id="form-name" placeholder="John Doe" required />
+                            <span class="form-error" id="name-error">Please enter your name.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-email">Email Address</label>
+                            <input type="email" id="form-email" placeholder="john@example.com" required />
+                            <span class="form-error" id="email-error">Please enter a valid email.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message">Message</label>
+                            <textarea id="form-message" rows="5" placeholder="Your message here..." required></textarea>
+                            <span class="form-error" id="message-error">Please enter your message.</span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                        <div id="form-success" class="form-success hidden">
+                            <i class="fas fa-check-circle"></i> Your message has been sent!
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    FOOTER
+    ============================================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    Built &amp; maintained by <strong>Yadav Subba</strong>
+                </p>
+                <div class="footer-social">
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p class="footer-copy">
+                    &copy; <span id="current-year">2026</span> Yadav Subba. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+    SCROLL-TO-TOP BUTTON
+    ============================================================ -->
+    <button id="scroll-top" class="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- ============================================================
+    JAVASCRIPT
+    ============================================================ -->
+    <script src="script.js"></script>
+</body>
+</html>
